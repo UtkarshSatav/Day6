@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Card</title>
+  <style>
+    .card {
+      border: 2px solid #333;
+      padding: 20px;
+      width: 300px;
+      background-color: #fafafa;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card h3 {
+      color: #333;
+    }
+
+    .card p {
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h3>📦 Product Name</h3>
+    <p>Some short description here.</p>
+  </div>
+
+</body>
+</html>
