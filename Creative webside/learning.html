@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML + CSS Beginner Practice Guide</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover{
+        color: #000;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem 1rem;
+      background-color: white;
+    }
+    @keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    }
+    .container div:hover {
+      color: #fff;
+      background-color: #4CAF50;
+      animation: fadeInUp 0.6s ease-out;
+    }
+    h2 {
+      border-left: 4px solid #4CAF50;
+      padding-left: 0.5rem;
+    }
+    .card {
+      border: 1px solid #ddd;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 6px;
+      background-color: #fafafa;
+    }
+    .highlight-green { background-color: #d4edda; }
+    .highlight-red { background-color: #f8d7da; }
+    .highlight-yellow { background-color: #fff3cd; }
+    .highlight-blue { background-color: #cce5ff; }
+    .practice-box {
+      border: 2px dashed green;
+      padding: 1rem;
+      margin: 1rem 0;
+      text-align: center;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HTML + CSS Beginner Practice Guide</h1>
+    <p>Understand basic HTML tags and CSS properties</p>
+  </header>
+
+  <nav>
+    <a href="#">HTML</a>
+    <a href="#">CSS</a>
+    <a href="#">Practice</a>
+  </nav>
+
+  <div class="container">
+    <h2>📘 HTML Basics</h2>
+    <div class="card"><strong>&lt;html&gt;</strong> — Root element that wraps entire HTML document.</div>
+    <div class="card"><strong>&lt;head&gt;</strong> — Contains metadata like title, links to CSS, charset.</div>
+    <div class="card"><strong>&lt;body&gt;</strong> — Visible part of HTML page.</div>
+    <div class="card"><strong>&lt;h1&gt; to &lt;h6&gt;</strong> — Headings, h1 is largest.</div>
+    <div class="card"><strong>&lt;p&gt;</strong> — Paragraph text.</div>
+    <div class="card"><strong>&lt;div&gt;</strong> — Generic container block.</div>
+    <div class="card"><strong>&lt;span&gt;</strong> — Inline container.</div>
+    <div class="card"><strong>&lt;a href&gt;</strong> — Hyperlink.</div>
+    <div class="card"><strong>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</strong> — Unordered, ordered lists and items.</div>
+    <div class="card"><strong>&lt;table&gt;</strong> — Table structure with &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</div>
+
+    <h2>🎨 CSS Basics</h2>
+    <div class="card"><strong>color:</strong> Changes text color.</div>
+    <div class="card"><strong>background-color:</strong> Sets background.</div>
+    <div class="card"><strong>padding:</strong> Space inside the element.</div>
+    <div class="card"><strong>margin:</strong> Space outside the element.</div>
+    <div class="card"><strong>border:</strong> Adds outline around the element.</div>
+    <div class="card"><strong>font-size:</strong> Controls text size.</div>
+    <div class="card"><strong>text-align:</strong> Aligns text.</div>
+    <div class="card"><strong>display:</strong> Controls layout (block, inline, flex).</div>
+    <div class="card"><strong>flexbox:</strong> Layout system for flexible items.</div>
+    <div class="card"><strong>box-shadow:</strong> Adds shadow around elements.</div>
+
+    <h2>🧠 Practice Examples</h2>
+    <div class="card highlight-green">Try modifying padding and margin values and observe changes.</div>
+    <div class="card highlight-green">Box 1: Padding: 20px | Margin: 10px</div>
+    <div class="card highlight-red">Box 2: Padding: 0 | Margin: 30px</div>
+    <div style="display: flex; gap: 10px;">
+      <div class="card highlight-blue" style="flex: 1;">Flex Item 1</div>
+      <div class="card highlight-green" style="flex: 1;">Flex Item 2</div>
+    </div>
+    <div class="card highlight-green">Experiment with <code>text-align</code>, <code>font-size</code>, and <code>border-radius</code>.</div>
+    <div class="practice-box">Centered and styled text!</div>
+    <div class="card highlight-yellow">Rounded corner alert box.</div>
+  </div>
+
+  <footer>
+    Made with ❤️ for Beginners | Practice Makes Perfect!
+  </footer>
+</body>
+</html>
